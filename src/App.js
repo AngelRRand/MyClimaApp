@@ -50,7 +50,7 @@ function App() {
     }
   }
   return (
-    <div className="App">
+    <div>
       <Route path='/' render={() => <Nav onSearch={onSearch} />} />
       <Switch>
         <Route exact path='/' children={() =>

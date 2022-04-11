@@ -4,7 +4,7 @@ import Card from './Card.jsx';
 
 export default function Cards({cities, onClose}) {
   return (
-    <div className='cards'>
+    <div className='container mx-auto '>
       {cities.map(c => <Card
           key={c.id}
           max={c.max}

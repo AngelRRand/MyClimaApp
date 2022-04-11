@@ -5,21 +5,22 @@ import { Link } from 'react-router-dom';
 
 function Nav({ onSearch }) {
   return (
-    
-      <nav className="">
-        <Link to='/'>
-        <span className="navbar-brand">
-          <img id="logoHenry" src={Logo} width="50" height="50" className="d-inline-block align-top" alt="" />
-          Henry - Weather App
-        </span>
-        </Link>
-        <Link to='/About'>
-          <span>About</span>
-        </Link>
-        <SearchBar
-          onSearch={onSearch}
-        />
-      </nav>
+
+    <nav className="flex justify-around space-x-4 bg-neutral-900 shadow-lg shadow-yellow-500/50">
+      <Link to='/'>
+        <div className='text-5xl font-extrabold'>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-300 ">
+            Clima
+          </span>
+        </div>
+      </Link>
+      <Link to='/About'>
+        <span className="text-5xl font-extrabold text-orange-400/100 ">About</span>
+      </Link>
+      <SearchBar
+        onSearch={onSearch}
+      />
+    </nav>
 
   );
 };
